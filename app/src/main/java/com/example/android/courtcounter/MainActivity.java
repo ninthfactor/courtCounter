@@ -20,6 +20,16 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    //method to reset the score
+
+    public  void resetScore(View view){
+        scoreTeamA = 0;
+        scoreTeamB = 0;
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
+
+    }
+
     //method for Team A +3
 
     public void plusThreeTeamA(View view){
