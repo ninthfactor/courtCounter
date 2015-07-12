@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 
     int scoreTeamA = 0 ;
+    int scoreTeamB = 0 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,28 @@ public class MainActivity extends ActionBarActivity {
     public void freeThrowTeamA(View view){
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
+    }
+
+    //method for Team B +3
+
+    public void plusThreeTeamB(View view){
+        scoreTeamB = scoreTeamB + 3;
+        displayForTeamB(scoreTeamB);
+    }
+
+    //method for team A +2
+
+    public void plusTwoTeamB(View view){
+        scoreTeamB = scoreTeamB + 2;
+        displayForTeamB(scoreTeamB);
+    }
+
+
+    //method for team A free throw
+
+    public void freeThrowTeamB(View view){
+        scoreTeamB = scoreTeamB + 1;
+        displayForTeamB(scoreTeamB);
     }
 
 
@@ -70,6 +93,11 @@ public class MainActivity extends ActionBarActivity {
      */
     public void displayForTeamA(int score) {
         TextView scoreView = (TextView) findViewById(R.id.team_a_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
 }
