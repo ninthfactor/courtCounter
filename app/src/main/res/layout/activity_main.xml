@@ -17,25 +17,32 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:padding="8dp"
+        android:id="@+id/team_a_score"
         android:text="0"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text= "+3 Points"/>
+        android:onClick="plusThreeTeamA"
+        android:text= "+3 Points"
+        android:background="#ffff933f" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="+2 Points"/>
+        android:onClick="plusTwoTeamA"
+        android:text="+2 Points"
+        android:background="#ffff933f" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Free Throw"/>
+        android:onClick="freeThrowTeamA"
+        android:text="Free Throw"
+        android:background="#ffff933f" />
 
 
 </LinearLayout>
