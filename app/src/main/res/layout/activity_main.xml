@@ -18,6 +18,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
+            android:layout_marginRight="5dp"
+
             android:orientation="vertical">
 
             <TextView
@@ -25,6 +27,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="8dp"
+                android:textSize="24sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
                 android:text="Team A" />
 
             <TextView
@@ -33,13 +38,15 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="8dp"
+                android:textSize="56sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
                 android:text="0" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#ffff933f"
                 android:onClick="plusThreeTeamA"
                 android:text="+3 Points" />
 
@@ -47,7 +54,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#ffff933f"
                 android:onClick="plusTwoTeamA"
                 android:text="+2 Points" />
 
@@ -55,18 +61,22 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#ffff933f"
                 android:onClick="freeThrowTeamA"
                 android:text="Free Throw" />
 
 
         </LinearLayout>
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray" />
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_weight="1"
+            android:layout_marginLeft="5dp"
             android:orientation="vertical">
 
             <TextView
@@ -74,6 +84,9 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="8dp"
+                android:textSize="24sp"
+                android:textColor="#616161"
+                android:fontFamily="sans-serif-medium"
                 android:text="Team B" />
 
             <TextView
@@ -82,13 +95,15 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:padding="8dp"
+                android:textSize="56sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-light"
                 android:text="0" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#ffff933f"
                 android:onClick="plusThreeTeamB"
                 android:text="+3 Points" />
 
@@ -96,7 +111,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#ffff933f"
                 android:onClick="plusTwoTeamB"
                 android:text="+2 Points" />
 
@@ -104,7 +118,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:background="#ffff933f"
                 android:onClick="freeThrowTeamB"
                 android:text="Free Throw" />
 
@@ -118,8 +131,7 @@
         android:layout_weight="1"
         android:layout_gravity="center_horizontal"
         android:text="Reset"
-        android:layout_margin="15dp"
-        android:onClick="resetScore"
-        android:background="#ffc5fffc" />
+        android:layout_margin="24dp"
+        android:onClick="resetScore" />
 
 </LinearLayout>
